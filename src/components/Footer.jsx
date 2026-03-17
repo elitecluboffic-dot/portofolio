@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-inner">
           <a href="#home" className="footer-logo">
             <span className="logo-bracket">&lt;</span>
-            <span className="logo-name">BLA</span>
+            <span className="logo-name">Labib</span>
             <span className="logo-bracket">/&gt;</span>
           </a>
           <p className="footer-copy">
