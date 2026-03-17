@@ -80,7 +80,7 @@ const About = () => {
     "TypeScript"
   ],
   "available": true,
-  "email": "your@email.com"
+  "email": "alwasilabib153@gmail.com"
 }`}</pre>
               </div>
             </div>
