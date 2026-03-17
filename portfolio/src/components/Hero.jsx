@@ -132,7 +132,7 @@ const Hero = () => {
             <div className="avatar-ring ring3" />
             <div className="avatar-inner">
               <div className="avatar-placeholder">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <img src="https://res.cloudinary.com/dhg2g8syu/image/upload/fl_immutable_cache,f_auto/v1773121879/IMG-20260309-002748-148_dephrx.jpg" alt="Bustanul Labib Alwasi" />
                   <circle cx="50" cy="38" r="18" fill="rgba(0,255,136,0.15)" stroke="var(--accent)" strokeWidth="1.5"/>
                   <path d="M15 85c0-19.33 15.67-35 35-35s35 15.67 35 35" fill="rgba(0,255,136,0.08)" stroke="var(--accent)" strokeWidth="1.5"/>
                 </svg>
