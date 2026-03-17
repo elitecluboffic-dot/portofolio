@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="#home" className="nav-logo">
           <span className="logo-bracket">&lt;</span>
-          <span className="logo-name">BLA</span>
+          <span className="logo-name">Labib</span>
           <span className="logo-bracket">/&gt;</span>
         </a>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
