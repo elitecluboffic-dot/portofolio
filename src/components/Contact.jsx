@@ -22,15 +22,26 @@ const Contact = () => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('sending');
-    // Replace with your actual form handler (e.g. Formspree, EmailJS, etc.)
-    await new Promise(r => setTimeout(r, 1500));
-    setStatus('sent');
-    setForm({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus('idle'), 4000);
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus('sending');
+  try {
+    const res = await fetch('https://email-sender.internetdnsofficial.workers.dev', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+    if (res.ok) {
+      setStatus('sent');
+      setForm({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus('idle'), 4000);
+    } else {
+      setStatus('error');
+    }
+  } catch {
+    setStatus('error');
+  }
+};
 
   const SOCIALS = [
     {
