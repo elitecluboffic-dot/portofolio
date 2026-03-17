@@ -136,6 +136,7 @@ const Hero = () => {
                   <circle cx="50" cy="38" r="18" fill="rgba(0,255,136,0.15)" stroke="var(--accent)" strokeWidth="1.5"/>
                   <path d="M15 85c0-19.33 15.67-35 35-35s35 15.67 35 35" fill="rgba(0,255,136,0.08)" stroke="var(--accent)" strokeWidth="1.5"/>
                 </svg>
+            </div>
               </div>
             </div>
             <div className="avatar-badge">
